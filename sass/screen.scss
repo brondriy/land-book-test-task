@@ -1,0 +1,586 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@font-face
+{
+    font-family: "Proxima Nova";
+    src: url('../fonts/Proxima Nova Regular.otf');
+}
+@font-face
+{
+    font-family: "Proxima Nova";
+    src: url('../fonts/Proxima Nova Bold.otf');
+    font-weight: bold;
+}
+@font-face
+{
+    font-family: "Proxima Nova";
+    src: url('../fonts/Proxima Nova Light.otf');
+    font-weight: lighter;
+}
+
+@font-face
+{
+    font-family: "Bebas Neue";
+    src: url('../fonts/Bebas Neue Bold.ttf');
+    font-weight: bold;
+}
+
+
+@mixin respond-to($media) {
+
+    @if $media == sm-screens {
+        @media only screen and (min-width: 0px) and (max-width: 767px) { @content; }
+    }
+
+    @else if $media == md-screens {
+        @media only screen and (min-width: 768px) and (max-width: 992px) { @content; }
+    }
+
+    @else if $media == desc-screens {
+        @media only screen and (min-width: 993px) and (max-width: 1364px) { @content; }
+    }
+    
+    @else if $media == my-screens {
+        @media only screen and (min-width: 1365px) and (max-width: 1367px) { @content; }
+    }
+
+    @else if $media == xs-screens {
+        @media only screen and (min-width: 1441px){ @content; }
+    }
+
+}
+
+
+.row
+{
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    max-width: 1367px;
+    margin: auto;
+}
+
+html
+{
+    width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body
+{
+    width: 100%;
+    padding-right: 0px;
+    border-top: 10px solid #ffd200;
+    background-color: #dedede;
+    overflow-x: hidden;
+    
+    .gradient
+    {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 10000px;
+        background-image: radial-gradient(ellipse at top, white, transparent);
+        z-index: -1;
+    }
+    
+    .container
+    {
+        position: absolute;
+        padding: 0px;
+        width: 100%;
+        .row.name
+        {
+            display: flex;
+            height: 180px;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            @include respond-to(sm-screens)
+            {
+                height: 100px;
+            }
+            
+            h1
+            {
+                margin-top: -70px;
+                text-align: center;
+                font-family: Proxima Nova;
+                text-transform: uppercase;
+                font-size: 42px;
+                font-weight: bold;
+                @include respond-to(sm-screens)
+                {
+                    font-size: 1rem;
+                    margin-top: -20px;
+                }
+            }
+        }
+        
+        .row.yellow
+        {
+            position: relative;
+            height: 350px;
+            background: #ffd200;
+            box-shadow: 0px 1px 1px rgba(0,0,0,.5);
+            max-width: 100%;
+            padding: 0px;
+            @include respond-to(sm-screens)
+            {
+                height: 220px;
+            }
+            
+            .row.underyellow
+            {
+                max-width: 1367px;
+                height: 350px;
+            }
+            
+            .top
+            {
+                position: absolute;
+                margin-left: 30px;
+                padding-top: 20px;
+                font-size: 58px;
+                font-weight: bold;
+                color: black;
+                font-family: Bebas Neue;
+                font-weight: bold;
+                text-transform: uppercase;
+                @include respond-to(sm-screens)
+                {
+                    font-size: 1rem;
+                    margin-left: 0px;
+                }
+                @include respond-to(md-screens)
+                {
+                    font-size: 2.5rem;
+                }
+                @include respond-to(desc-screens)
+                {
+                    font-size: 2.7rem;
+                }
+                hr
+                {
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                    border-top: 1px solid rgba(0,0,0,.25);
+                    border-bottom: 1px solid rgba(255,255,255,.5);
+                }
+                
+                .middle
+                {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    font-size: 19px;
+                    font-weight: normal;
+                    text-transform: none;
+                    font-family: Proxima Nova;
+                    @include respond-to(sm-screens)
+                    {
+                        font-size: .7rem;
+                    }
+                }
+                
+                .bottom
+                {
+                    position: absolute;
+                    margin-top: 20px;
+                    ul
+                    {
+                        li
+                        {
+                            font-size: 19px;
+                            padding-left: 25px;
+                            margin-bottom: 5px;
+                            @include respond-to(sm-screens)
+                            {
+                                font-size: .7rem;
+                                padding-left: 10px;
+                            }
+                            &:before
+                            {
+                                content:"";
+                                position: absolute;
+                                display: block;
+                                width: 12px;
+                                height: 12px;
+                                margin-top: 3px;
+                                left: 0px;
+                                background-color: black;
+                                border-radius: 50%;
+                                @include respond-to(sm-screens)
+                                {
+                                    width: 6px;
+                                    height: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .col-md-4
+            {
+                position: relative;
+                z-index: 1;
+                img
+                {
+                    margin-left: -130px;
+                    margin-top: -20%;
+                    @include respond-to(sm-screens)
+                    {
+                        width: 250px;
+                        margin-left: -50px;
+                    }
+                    @include respond-to(md-screens)
+                    {
+                        margin-left: 0px;
+                        width: 430px;
+                    }
+                }
+            }
+            .col-md-3
+            {
+                height: 100%;
+                padding: 0px;
+                @include respond-to(sm-screens)
+                {
+                    margin-top: -17px;
+                    height: auto;
+                }
+                @include respond-to(md-screens)
+                {
+                    margin-top: -25px;
+                }
+                .form
+                {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #3c3636;
+                    padding-top: 30px;
+                    @include respond-to(sm-screens)
+                    {
+                        padding-bottom: 20px;
+                    }
+                    
+                    span
+                    {
+                        display: block;
+                        color: white;
+                        width: 100%;
+                        text-align: center;
+                        font-family: Proxima Nova;
+                        font-weight: lighter;
+                    }
+                    h1
+                    {
+                        width: 100%;
+                        text-align: center;
+                        color: #ffd200;
+                        font-family: Proxima Nova;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        font-size: 48px;
+                        @include respond-to(desc-screens)
+                        {
+                            font-size: 40px;
+                        }
+                    }
+                    form
+                    {
+                        padding-top: 30px;
+                        text-align: center;
+                        
+                        input[type='text']
+                        {
+                            width: 90%;
+                            height: 55px;
+                            border-radius: 5px;
+                            margin-bottom: 15px;
+                            border: none;
+                            outline: none;
+                            padding-left: 20px;
+                            font-size: 20px;
+                            color: black;
+                            font-family: Proxima Nova;
+                        }
+                        
+                        input[type='submit']
+                        {
+                            position: relative;
+                            width: 90%;
+                            height: 55px;
+                            border-radius: 5px;
+                            border: none;
+                            color: white;
+                            font-weight: bold;
+                            font-family: Proxima Nova;
+                            font-size: 24px;
+                            outline: none;
+                            background: linear-gradient(#ff78a0, #851737);
+                        }
+                    }
+                }
+            }
+            
+        }
+        .row.p2
+        {
+            padding-bottom: 50px;
+            font-family: Proxima Nova;
+            font-weight: bold;
+            font-size: 28px;
+            color: black;
+            text-align: center;
+            background-color: transparent;
+            @include respond-to(sm-screens)
+            {
+                padding-bottom: 20px;
+                font-size: 25px;
+            }
+            
+            .span
+            {
+                position: relative;
+                display: inline-block;
+                width: 600px;
+                margin-top: 20px;
+                @include respond-to(sm-screens)
+                {
+                    margin-top: 20px;
+                    width: auto;
+                }
+                @include respond-to(md-screens)
+                {
+                    margin-top: 20px;
+                }
+                @include respond-to(desc-screens)
+                {
+                    margin-top: 0px;
+                }
+            }
+            
+            .arrow
+            {
+                height: 130px;
+                position: absolute;
+                margin-top: -90px;
+                @include respond-to(sm-screens)
+                {
+                    display: none;
+                }
+                @include respond-to(md-screens)
+                {
+                    display: none;
+                }
+                @include respond-to(desc-screens)
+                {
+                    margin-top: -110px;
+                }
+            }
+        }
+        .row.slider
+        {
+            position: relative;
+            background-color: transparent;    
+            border-top: 1px solid rgba(0,0,0,.3);
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-size: 0px;
+            
+            .owl-carousel
+            {
+                width: 90%;
+                margin: auto;
+                @include respond-to(sm-screens)
+                {
+                    width: 100%;
+                }
+                @include respond-to(xs-screens)
+                {
+                    width: 100%;
+                }
+            }
+            .left, .right
+            {
+                display: flex;
+                position: absolute;
+                top: 0px;
+                height: 100%;
+                width: 5%;
+                font-size: 24px;
+                color: black;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                @include respond-to(sm-screens)
+                {
+                    display: none;
+                }
+                @include respond-to(xs-screens)
+                {
+                    left: -5%;
+                }
+            }
+            .right
+            {
+                right: 0px;
+                
+                @include respond-to(xs-screens)
+                {
+                    left: 100%;
+                }
+                img
+                {
+                    transform: rotate(180deg);
+                }
+            }
+            .fr
+            {
+                display: inline-block;
+                width: 50%;
+                padding: 0px;
+                margin: 0px;
+                vertical-align: top;
+                .row
+                {
+                    height: 100%;
+                    .col-md-4
+                    {
+                        padding: 0px;
+                        margin-right: -20px;
+                        .mask
+                        {
+                            position: relative;
+                            width: 178px;
+                            height: 178px;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            @include respond-to(sm-screens)
+                            {
+                                width: 120px;
+                                height: 120px;
+                                margin: auto;
+                                margin-bottom: 20px;
+                            }
+                            @include respond-to(md-screens)
+                            {
+                                margin: auto;
+                                margin-bottom: 20px;
+                            }
+                            @include respond-to(desc-screens)
+                            {
+                                width: 140px;
+                                height: 140px;
+                            }
+                        }
+                    }
+                    .col-md-8
+                    {
+                        .rev
+                        {
+                            font-size: 18px;
+                            font-family: Proxima Nova;
+                            color: black;
+                            @include respond-to(sm-screens)
+                            {
+                                font-size: 12px;
+                            }
+                            @include respond-to(md-screens)
+                            {
+                                text-align: center;
+                            }
+                        }
+                        .hr
+                        {
+                            position: relative;
+                            margin-top: 30px;
+                            border-bottom: 1px solid #ffd200;
+                            margin-bottom: 30px;
+                            
+                            &:after
+                            {
+                                content: "";
+                                position: absolute;
+                                width: 14px;
+                                height: 14px;
+                                background-color: #ffd200;
+                                left: 0px;
+                                top: 1px;
+                            }
+                        }
+                        .name
+                        {
+                            font-size: 28px;
+                            color: black;
+                            font-family: Proxima Nova;
+                            font-weight: bold;
+                            @include respond-to(sm-screens)
+                            {
+                                font-size: 20px;
+                            }
+                        }
+                        .loc
+                        {
+                            font-size: 19px;
+                            font-family: Proxima Nova;
+                            font-weight: bold;
+                            color: black;
+                            @include respond-to(sm-screens)
+                            {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .fr:nth-child(2)
+            {
+                .mask>img
+                {
+                    width: 256px;
+                    height: 256px;
+                    position: absolute;
+                    bottom: 0px;
+                    left: -20%;
+                    @include respond-to(sm-screens)
+                    {
+                        width: 200px;
+                        height: 200px;
+                    }
+                    @include respond-to(desc-screens)
+                    {
+                        width: 210px;
+                        height: 210px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+::-webkit-input-placeholder { /* Chrome */
+    color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: black;
+    opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+    color: black;
+    opacity: 1;
+}
