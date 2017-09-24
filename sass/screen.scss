@@ -137,7 +137,7 @@ body
             padding: 0px;
             @include respond-to(sm-screens)
             {
-                height: 220px;
+                height: 250px;
             }
             
             .row.underyellow
@@ -243,6 +243,7 @@ body
                     {
                         width: 250px;
                         margin-left: -50px;
+                        margin-top: -20px;
                     }
                     @include respond-to(md-screens)
                     {
@@ -257,7 +258,7 @@ body
                 padding: 0px;
                 @include respond-to(sm-screens)
                 {
-                    margin-top: -17px;
+                    margin-top: -7vw;
                     height: auto;
                 }
                 @include respond-to(md-screens)
