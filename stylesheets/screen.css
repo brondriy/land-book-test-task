@@ -69,24 +69,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url("../fonts/Proxima Nova Regular.otf");
+  src: url("../fonts/Proxima Nova Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: "Proxima Nova";
-  src: url("../fonts/Proxima Nova Bold.otf");
+  font-family: "Proxima Nova Bold";
+  src: url("../fonts/Proxima Nova Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Bold.otf") format("opentype");
   font-weight: bold;
 }
 @font-face {
-  font-family: "Proxima Nova";
-  src: url("../fonts/Proxima Nova Light.otf");
+  font-family: "Proxima Nova Light";
+  src: url("../fonts/Proxima Nova Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Light.otf") format("opentype");
   font-weight: lighter;
 }
 @font-face {
   font-family: "Bebas Neue";
-  src: url("../fonts/Bebas Neue Bold.ttf");
+  src: url("../fonts/Bebas Neue Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bebas Neue Bold.ttf") format("truetype");
   font-weight: bold;
 }
-/* line 59, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .row {
   width: 100%;
   margin-left: 0px;
@@ -95,14 +95,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: auto;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 html {
   width: 100%;
   padding: 0px;
   overflow-x: hidden;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 body {
   width: 100%;
   padding-right: 0px;
@@ -110,7 +110,7 @@ body {
   background-color: #dedede;
   overflow-x: hidden;
 }
-/* line 83, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 body .gradient {
   position: fixed;
   top: 0px;
@@ -119,13 +119,13 @@ body .gradient {
   background-image: radial-gradient(ellipse at top, #ffffff, rgba(0, 0, 0, 0));
   z-index: -1;
 }
-/* line 93, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 body .container {
   position: absolute;
   padding: 0px;
   width: 100%;
 }
-/* line 98, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 body .container .row.name {
   display: flex;
   height: 180px;
@@ -134,28 +134,28 @@ body .container .row.name {
   background-color: transparent;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 98, ../sass/screen.scss */
+  /* line 102, ../sass/screen.scss */
   body .container .row.name {
     height: 100px;
   }
 }
-/* line 110, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 body .container .row.name h1 {
   margin-top: -70px;
   text-align: center;
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova Bold";
   text-transform: uppercase;
   font-size: 42px;
   font-weight: bold;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 110, ../sass/screen.scss */
+  /* line 114, ../sass/screen.scss */
   body .container .row.name h1 {
     font-size: 1rem;
     margin-top: -20px;
   }
 }
-/* line 126, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 body .container .row.yellow {
   position: relative;
   height: 350px;
@@ -165,17 +165,17 @@ body .container .row.yellow {
   padding: 0px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 126, ../sass/screen.scss */
+  /* line 130, ../sass/screen.scss */
   body .container .row.yellow {
     height: 220px;
   }
 }
-/* line 139, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 body .container .row.yellow .row.underyellow {
   max-width: 1367px;
   height: 350px;
 }
-/* line 145, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 body .container .row.yellow .top {
   position: absolute;
   margin-left: 30px;
@@ -188,32 +188,32 @@ body .container .row.yellow .top {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 145, ../sass/screen.scss */
+  /* line 149, ../sass/screen.scss */
   body .container .row.yellow .top {
     font-size: 1rem;
     margin-left: 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 145, ../sass/screen.scss */
+  /* line 149, ../sass/screen.scss */
   body .container .row.yellow .top {
     font-size: 2.5rem;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1364px) {
-  /* line 145, ../sass/screen.scss */
+  /* line 149, ../sass/screen.scss */
   body .container .row.yellow .top {
     font-size: 2.7rem;
   }
 }
-/* line 169, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 body .container .row.yellow .top hr {
   margin-top: 0px;
   margin-bottom: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 177, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 body .container .row.yellow .top .middle {
   display: block;
   position: absolute;
@@ -224,30 +224,30 @@ body .container .row.yellow .top .middle {
   font-family: Proxima Nova;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 177, ../sass/screen.scss */
+  /* line 181, ../sass/screen.scss */
   body .container .row.yellow .top .middle {
     font-size: .7rem;
   }
 }
-/* line 192, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 body .container .row.yellow .top .bottom {
   position: absolute;
   margin-top: 20px;
 }
-/* line 198, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 body .container .row.yellow .top .bottom ul li {
   font-size: 19px;
   padding-left: 25px;
   margin-bottom: 5px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 198, ../sass/screen.scss */
+  /* line 202, ../sass/screen.scss */
   body .container .row.yellow .top .bottom ul li {
     font-size: .7rem;
     padding-left: 10px;
   }
 }
-/* line 208, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 body .container .row.yellow .top .bottom ul li:before {
   content: "";
   position: absolute;
@@ -260,55 +260,55 @@ body .container .row.yellow .top .bottom ul li:before {
   border-radius: 50%;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 208, ../sass/screen.scss */
+  /* line 212, ../sass/screen.scss */
   body .container .row.yellow .top .bottom ul li:before {
     width: 6px;
     height: 6px;
   }
 }
-/* line 230, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 body .container .row.yellow .col-md-4 {
   position: relative;
   z-index: 1;
 }
-/* line 234, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 body .container .row.yellow .col-md-4 img {
   margin-left: -130px;
   margin-top: -20%;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 234, ../sass/screen.scss */
+  /* line 238, ../sass/screen.scss */
   body .container .row.yellow .col-md-4 img {
     width: 250px;
     margin-left: -50px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 234, ../sass/screen.scss */
+  /* line 238, ../sass/screen.scss */
   body .container .row.yellow .col-md-4 img {
     margin-left: 0px;
     width: 430px;
   }
 }
-/* line 250, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 body .container .row.yellow .col-md-3 {
   height: 100%;
   padding: 0px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 250, ../sass/screen.scss */
+  /* line 254, ../sass/screen.scss */
   body .container .row.yellow .col-md-3 {
     margin-top: -17px;
     height: auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 250, ../sass/screen.scss */
+  /* line 254, ../sass/screen.scss */
   body .container .row.yellow .col-md-3 {
     margin-top: -25px;
   }
 }
-/* line 263, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 body .container .row.yellow .col-md-3 .form {
   width: 100%;
   height: 100%;
@@ -316,42 +316,42 @@ body .container .row.yellow .col-md-3 .form {
   padding-top: 30px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 263, ../sass/screen.scss */
+  /* line 267, ../sass/screen.scss */
   body .container .row.yellow .col-md-3 .form {
     padding-bottom: 20px;
   }
 }
-/* line 274, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 body .container .row.yellow .col-md-3 .form span {
   display: block;
   color: white;
   width: 100%;
   text-align: center;
-  font-family: Proxima Nova;
+  font-family: Proxima Nova Light;
   font-weight: lighter;
 }
-/* line 283, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 body .container .row.yellow .col-md-3 .form h1 {
   width: 100%;
   text-align: center;
   color: #ffd200;
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova Bold";
   font-weight: bold;
   text-transform: uppercase;
   font-size: 48px;
 }
 @media only screen and (min-width: 993px) and (max-width: 1364px) {
-  /* line 283, ../sass/screen.scss */
+  /* line 287, ../sass/screen.scss */
   body .container .row.yellow .col-md-3 .form h1 {
     font-size: 40px;
   }
 }
-/* line 297, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 body .container .row.yellow .col-md-3 .form form {
   padding-top: 30px;
   text-align: center;
 }
-/* line 302, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 body .container .row.yellow .col-md-3 .form form input[type='text'] {
   width: 90%;
   height: 55px;
@@ -364,7 +364,7 @@ body .container .row.yellow .col-md-3 .form form input[type='text'] {
   color: black;
   font-family: Proxima Nova;
 }
-/* line 316, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 body .container .row.yellow .col-md-3 .form form input[type='submit'] {
   position: relative;
   width: 90%;
@@ -373,15 +373,15 @@ body .container .row.yellow .col-md-3 .form form input[type='submit'] {
   border: none;
   color: white;
   font-weight: bold;
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova Bold";
   font-size: 24px;
   outline: none;
   background: linear-gradient(#ff78a0, #851737);
 }
-/* line 335, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 body .container .row.p2 {
   padding-bottom: 50px;
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova Bold";
   font-weight: bold;
   font-size: 28px;
   color: black;
@@ -389,13 +389,13 @@ body .container .row.p2 {
   background-color: transparent;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 335, ../sass/screen.scss */
+  /* line 339, ../sass/screen.scss */
   body .container .row.p2 {
     padding-bottom: 20px;
     font-size: 25px;
   }
 }
-/* line 350, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 body .container .row.p2 .span {
   position: relative;
   display: inline-block;
@@ -403,49 +403,49 @@ body .container .row.p2 .span {
   margin-top: 20px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 350, ../sass/screen.scss */
+  /* line 354, ../sass/screen.scss */
   body .container .row.p2 .span {
     margin-top: 20px;
     width: auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 350, ../sass/screen.scss */
+  /* line 354, ../sass/screen.scss */
   body .container .row.p2 .span {
     margin-top: 20px;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1364px) {
-  /* line 350, ../sass/screen.scss */
+  /* line 354, ../sass/screen.scss */
   body .container .row.p2 .span {
     margin-top: 0px;
   }
 }
-/* line 371, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 body .container .row.p2 .arrow {
   height: 130px;
   position: absolute;
   margin-top: -90px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 371, ../sass/screen.scss */
+  /* line 375, ../sass/screen.scss */
   body .container .row.p2 .arrow {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 371, ../sass/screen.scss */
+  /* line 375, ../sass/screen.scss */
   body .container .row.p2 .arrow {
     display: none;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1364px) {
-  /* line 371, ../sass/screen.scss */
+  /* line 375, ../sass/screen.scss */
   body .container .row.p2 .arrow {
     margin-top: -110px;
   }
 }
-/* line 390, ../sass/screen.scss */
+/* line 394, ../sass/screen.scss */
 body .container .row.slider {
   position: relative;
   background-color: transparent;
@@ -456,24 +456,24 @@ body .container .row.slider {
   padding-bottom: 50px;
   font-size: 0px;
 }
-/* line 401, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 body .container .row.slider .owl-carousel {
   width: 90%;
   margin: auto;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 401, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   body .container .row.slider .owl-carousel {
     width: 100%;
   }
 }
 @media only screen and (min-width: 1441px) {
-  /* line 401, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   body .container .row.slider .owl-carousel {
     width: 100%;
   }
 }
-/* line 414, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 body .container .row.slider .left, body .container .row.slider .right {
   display: flex;
   position: absolute;
@@ -487,32 +487,32 @@ body .container .row.slider .left, body .container .row.slider .right {
   cursor: pointer;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 414, ../sass/screen.scss */
+  /* line 418, ../sass/screen.scss */
   body .container .row.slider .left, body .container .row.slider .right {
     display: none;
   }
 }
 @media only screen and (min-width: 1441px) {
-  /* line 414, ../sass/screen.scss */
+  /* line 418, ../sass/screen.scss */
   body .container .row.slider .left, body .container .row.slider .right {
     left: -5%;
   }
 }
-/* line 435, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 body .container .row.slider .right {
   right: 0px;
 }
 @media only screen and (min-width: 1441px) {
-  /* line 435, ../sass/screen.scss */
+  /* line 439, ../sass/screen.scss */
   body .container .row.slider .right {
     left: 100%;
   }
 }
-/* line 443, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 body .container .row.slider .right img {
   transform: rotate(180deg);
 }
-/* line 448, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 body .container .row.slider .fr {
   display: inline-block;
   width: 50%;
@@ -520,16 +520,16 @@ body .container .row.slider .fr {
   margin: 0px;
   vertical-align: top;
 }
-/* line 455, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 body .container .row.slider .fr .row {
   height: 100%;
 }
-/* line 458, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 body .container .row.slider .fr .row .col-md-4 {
   padding: 0px;
   margin-right: -20px;
 }
-/* line 462, ../sass/screen.scss */
+/* line 466, ../sass/screen.scss */
 body .container .row.slider .fr .row .col-md-4 .mask {
   position: relative;
   width: 178px;
@@ -538,7 +538,7 @@ body .container .row.slider .fr .row .col-md-4 .mask {
   overflow: hidden;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 462, ../sass/screen.scss */
+  /* line 466, ../sass/screen.scss */
   body .container .row.slider .fr .row .col-md-4 .mask {
     width: 120px;
     height: 120px;
@@ -547,45 +547,45 @@ body .container .row.slider .fr .row .col-md-4 .mask {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 462, ../sass/screen.scss */
+  /* line 466, ../sass/screen.scss */
   body .container .row.slider .fr .row .col-md-4 .mask {
     margin: auto;
     margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1364px) {
-  /* line 462, ../sass/screen.scss */
+  /* line 466, ../sass/screen.scss */
   body .container .row.slider .fr .row .col-md-4 .mask {
     width: 140px;
     height: 140px;
   }
 }
-/* line 490, ../sass/screen.scss */
+/* line 494, ../sass/screen.scss */
 body .container .row.slider .fr .row .col-md-8 .rev {
   font-size: 18px;
   font-family: Proxima Nova;
   color: black;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 490, ../sass/screen.scss */
+  /* line 494, ../sass/screen.scss */
   body .container .row.slider .fr .row .col-md-8 .rev {
     font-size: 12px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 490, ../sass/screen.scss */
+  /* line 494, ../sass/screen.scss */
   body .container .row.slider .fr .row .col-md-8 .rev {
     text-align: center;
   }
 }
-/* line 504, ../sass/screen.scss */
+/* line 508, ../sass/screen.scss */
 body .container .row.slider .fr .row .col-md-8 .hr {
   position: relative;
   margin-top: 30px;
   border-bottom: 1px solid #ffd200;
   margin-bottom: 30px;
 }
-/* line 511, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 body .container .row.slider .fr .row .col-md-8 .hr:after {
   content: "";
   position: absolute;
@@ -595,33 +595,33 @@ body .container .row.slider .fr .row .col-md-8 .hr:after {
   left: 0px;
   top: 1px;
 }
-/* line 522, ../sass/screen.scss */
+/* line 526, ../sass/screen.scss */
 body .container .row.slider .fr .row .col-md-8 .name {
   font-size: 28px;
   color: black;
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova Bold";
   font-weight: bold;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 522, ../sass/screen.scss */
+  /* line 526, ../sass/screen.scss */
   body .container .row.slider .fr .row .col-md-8 .name {
     font-size: 20px;
   }
 }
-/* line 533, ../sass/screen.scss */
+/* line 537, ../sass/screen.scss */
 body .container .row.slider .fr .row .col-md-8 .loc {
   font-size: 19px;
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova Bold";
   font-weight: bold;
   color: black;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 533, ../sass/screen.scss */
+  /* line 537, ../sass/screen.scss */
   body .container .row.slider .fr .row .col-md-8 .loc {
     font-size: 14px;
   }
 }
-/* line 549, ../sass/screen.scss */
+/* line 553, ../sass/screen.scss */
 body .container .row.slider .fr:nth-child(2) .mask > img {
   width: 256px;
   height: 256px;
@@ -630,40 +630,40 @@ body .container .row.slider .fr:nth-child(2) .mask > img {
   left: -20%;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 549, ../sass/screen.scss */
+  /* line 553, ../sass/screen.scss */
   body .container .row.slider .fr:nth-child(2) .mask > img {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1364px) {
-  /* line 549, ../sass/screen.scss */
+  /* line 553, ../sass/screen.scss */
   body .container .row.slider .fr:nth-child(2) .mask > img {
     width: 210px;
     height: 210px;
   }
 }
 
-/* line 573, ../sass/screen.scss */
+/* line 577, ../sass/screen.scss */
 ::-webkit-input-placeholder {
   /* Chrome */
   color: black;
 }
 
-/* line 576, ../sass/screen.scss */
+/* line 580, ../sass/screen.scss */
 :-ms-input-placeholder {
   /* IE 10+ */
   color: black;
 }
 
-/* line 579, ../sass/screen.scss */
+/* line 583, ../sass/screen.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: black;
   opacity: 1;
 }
 
-/* line 583, ../sass/screen.scss */
+/* line 587, ../sass/screen.scss */
 :-moz-placeholder {
   /* Firefox 4 - 18 */
   color: black;
